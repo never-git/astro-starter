@@ -42,25 +42,26 @@ const socialCount = SOCIALS.filter(social => social.active).length;
       </a>
 
       <p>
-        AstroPaper is a minimal, responsive, accessible and SEO-friendly Astro
-        blog theme. This theme follows best practices and provides accessibility
-        out of the box. Light and dark mode are supported by default. Moreover,
-        additional color schemes can also be configured.
+        我的学习 Blog 网站, 用来记录一些技术笔记, 以及一些生活感悟.
+        目前比较感兴趣的技术方向是前端开发, 以及一些后端开发的技术. Rust, Go,
+        Node.js, Deno, TypeScript, React, Vue, Svelte, Astro, Vite, Next.js,
+        Nuxt.js, Nest.js, Express, Koa, Rocket, Actix, Warp, ...
+        <p>在这里，我将分享我的学习 Rust, Go, Zig, Nim 之旅。</p>
       </p>
       <p>
-        Read the blog posts or check
+        本站正在建设中, 具体学习内容请先参考
         <LinkButton
           className="underline decoration-dashed underline-offset-4 hover:text-skin-accent"
-          href="https://github.com/satnaing/astro-paper#readme"
+          href="#featured"
         >
-          README
-        </LinkButton> for more info.
+          谷哥
+        </LinkButton>.
       </p>
       {
         // only display if at least one social link is enabled
         socialCount > 0 && (
           <div class="social-wrapper">
-            <div class="social-links">Social Links:</div>
+            <div class="social-links">社交链接（未完成）:</div>
             <Socials />
           </div>
         )
@@ -111,7 +112,7 @@ const socialCount = SOCIALS.filter(social => social.active).length;
 
     <div class="all-posts-btn-wrapper">
       <LinkButton href="/posts/">
-        All Posts
+        查看文章列表
         <svg xmlns="http://www.w3.org/2000/svg"
           ><path
             d="m11.293 17.293 1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z"
